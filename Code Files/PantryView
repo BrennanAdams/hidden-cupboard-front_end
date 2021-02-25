@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>What is in the Cupboard?</h1>
+<p1>Please check off any items that you can use for your recipe today.</p1>
+<hr>
+<form action="/action_page.php">
+  <input type="checkbox" id="item1" name="item1" value="Tomato">
+  <label for="item1">Tomatoes</label><br>
+  <input type="checkbox" id="item2" name="item2" value="Carrot">
+  <label for="item2"> Carrots</label><br>
+  <input type="checkbox" id="item3" name="item3" value="Cucumbers">
+  <label for="item3">Cucumbers</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
