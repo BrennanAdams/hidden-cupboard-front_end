@@ -1,12 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    
+    <!-- Nav bar is at the top of every page -->
+    <Navbar/>  
+    <!-- This is very important, allows us to use the links in the navbar-->
     <router-view/>
+
+
+
+    
+
+    
   </div>
 </template>
+
+
+
+
+
+<script>
+
+import Navbar from './components/Navbar' //Here we import the navbar component
+export default {
+  components:{
+    Navbar  //we must declare the navbar component to use it
+  }
+}
+</script>
+
+
+
 
 <style>
 #app {
