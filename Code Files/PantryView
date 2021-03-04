@@ -1,19 +1,225 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    h1 {
+      font-family: fantasy;
+      border-color: rgb(118, 123, 133);
+      border-style: groove;
+      text-align: center;
+    }
+    form {
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
 <body>
-
-<h1>What is in the Cupboard?</h1>
-<p1>Please check off any items that you can use for your recipe today.</p1>
-<hr>
+<h1>What's In Your Cupboard Today?</h1>
 <form action="/action_page.php">
-  <input type="checkbox" id="item1" name="item1" value="Tomato">
-  <label for="item1">Tomatoes</label><br>
-  <input type="checkbox" id="item2" name="item2" value="Carrot">
-  <label for="item2"> Carrots</label><br>
-  <input type="checkbox" id="item3" name="item3" value="Cucumbers">
-  <label for="item3">Cucumbers</label><br><br>
+    <label class="container" style="align-content: left;">
+      <input type="checkbox" id="item1" name="item1" value="white vinegar">
+      <label for="item1">white vinegar</label><br>
+      <input type="checkbox" id="item2" name="item2" value="balsamic vinegar">
+      <label for="item2"> balsamic vinegar</label><br>
+      <input type="checkbox" id="item3" name="item3" value="apple cider vinegar">
+      <label for="item3">apple cider vinegar</label><br>
+      <input type="checkbox" id="item4" name="item4" value="baking soda">
+      <label for="item4">baking soda</label><br>
+      <input type="checkbox" id="item5" name="item5" value="baking powder">
+      <label for="item5">baking powder</label><br>
+      <input type="checkbox" id="item6" name="item6" value="cocoa powder">
+      <label for="item6">cocoa powder</label><br>
+      <input type="checkbox" id="item7" name="item7" value="olive oil">
+      <label for="item7">olive oil</label><br>
+      <input type="checkbox" id="item8" name="item8" value="coconut oil">
+      <label for="item8">coconut oil</label><br>
+      <input type="checkbox" id="item9" name="item9" value="sea salt">
+      <label for="item9">sea salt</label><br>
+      <input type="checkbox" id="item10" name="item10" value="black pepper">
+      <label for="item10">black pepper</label><br>
+      <input type="checkbox" id="item11" name="item11" value="basil">
+      <label for="item11">basil</label><br>
+      <input type="checkbox" id="item12" name="item12" value="oregano">
+      <label for="item12">oregano</label><br>
+      <input type="checkbox" id="item13" name="item13" value="parsley">
+      <label for="item13">parsley</label><br>
+      <input type="checkbox" id="item14" name="item14" value="garlic powder">
+      <label for="item14">garlic powder</label><br>
+      <input type="checkbox" id="item15" name="item15" value="onion powder">
+      <label for="item15">onion powder</label><br>
+      <input type="checkbox" id="item16" name="item16" value="italian seasoning">
+      <label for="item16">italian seasoning</label><br>
+      <input type="checkbox" id="item17" name="item17" value="cinnamon">
+      <label for="item17">cinnamon</label><br>
+      <input type="checkbox" id="item18" name="item18" value="nutmeg">
+      <label for="item18">nutmeg</label><br>
+      <input type="checkbox" id="item19" name="item19" value="chili">
+      <label for="item19">chili</label><br>
+      <input type="checkbox" id="item20" name="item20" value="cumin">
+      <label for="item20">cumin</label><br>
+      <input type="checkbox" id="item21" name="item21" value="thyme">
+      <label for="item21">thyme</label><br>
+      <input type="checkbox" id="item22" name="item22" value="fennel">
+      <label for="item22">fennel</label><br>
+      <input type="checkbox" id="item23" name="item23" value="vanilla extract">
+      <label for="item23">vanilla extract</label><br>
+      <input type="checkbox" id="item24" name="item24" value="almond extract">
+      <label for="item24">almond extract</label><br>
+      <input type="checkbox" id="item25" name="item25" value="maple extract">
+      <label for="item25">maple extract</label><br>
+      <input type="checkbox" id="item26" name="item26" value="mint extract">
+      <label for="item26">mint extract</label><br>
+      <input type="checkbox" id="item27" name="item27" value="orange extract">
+      <label for="item27">orange extract</label><br>
+      <input type="checkbox" id="item28" name="item28" value="almond flour">
+      <label for="item28">almond flour</label><br>
+      <input type="checkbox" id="item29" name="item29" value="coconut flour">
+      <label for="item29">coconut flour</label><br>
+      <input type="checkbox" id="item30" name="item30" value="all-purpose flour">
+      <label for="item30">all-purpose flour</label><br>
+      <input type="checkbox" id="item31" name="item31" value="protein powder">
+      <label for="item31">protein powder</label><br>
+      <input type="checkbox" id="item32" name="item32" value="flax seed meal">
+      <label for="item32">flax seed meal</label><br>
+      <input type="checkbox" id="item33" name="item33" value="thickner">
+      <label for="item33">thickner</label><br>
+      <input type="checkbox" id="item34" name="item34" value="chia seeds">
+      <label for="item34">chia seeds</label><br>
+      <input type="checkbox" id="item35" name="item35" value="soy sauce">
+      <label for="item35">soy sauce</label><br>
+      <input type="checkbox" id="item36" name="item36" value="hot sauce">
+      <label for="item36">hot sauce</label><br>
+      <input type="checkbox" id="item37" name="item37" value="onion">
+      <label for="item37">onion</label><br>
+      <input type="checkbox" id="item38" name="item38" value="garlic">
+      <label for="item38">garlic</label><br>
+      <input type="checkbox" id="item39" name="item39" value="jalapeno">
+      <label for="item39">jalapeno</label><br>
+      <input type="checkbox" id="item40" name="item40" value="olive">
+      <label for="item40">olive</label><br>
+      <input type="checkbox" id="item41" name="item41" value="iced tea bags">
+      <label for="item41">iced tea bags</label><br>
+      <input type="checkbox" id="item42" name="item42" value="pizza sauce">
+      <label for="item40">pizza sauce</label><br>
+      <input type="checkbox" id="item43" name="item43" value="organic beef broth">
+      <label for="item43">organic beef broth</label><br>
+      <input type="checkbox" id="item44" name="item44" value="organic chicken broth">
+      <label for="item44">organic chicken broth</label><br>
+      <input type="checkbox" id="item45" name="item45" value="organic vegetable broth">
+      <label for="item45">organic vegetable broth</label><br>
+      <input type="checkbox" id="item46" name="item46" value="pumpkin seeds">
+      <label for="item46">pumpkin seeds</label><br>
+      <input type="checkbox" id="item47" name="item47" value="sunflower seeds">
+      <label for="item47">sunflower seeds</label><br>
+      <input type="checkbox" id="item48" name="item48" value="macadamia nuts">
+      <label for="item48">macadamia nuts</label><br>
+      <input type="checkbox" id="item49" name="item49" value="almonds">
+      <label for="item49">almonds</label><br>
+      <input type="checkbox" id="item50" name="item50" value="walnuts">
+      <label for="item50">walnuts</label><br>
+      </label>
+    <label class="container" style="align-content: right;">
+      <input type="checkbox" id="item51" name="item51" value="pine nuts">
+      <label for="item51">pine nuts</label><br>
+      <input type="checkbox" id="item52" name="item52" value="cashews">
+      <label for="item52">cashews</label><br>
+      <input type="checkbox" id="item53" name="item53" value="pecans">
+      <label for="item53">pecans</label><br>
+      <input type="checkbox" id="item54" name="item54" value="sun-dried tomatoes">
+      <label for="item54">sun-dried tomatoes</label><br>
+      <input type="checkbox" id="item55" name="item55" value="roasted red peppers">
+      <label for="item55">roasted red peppers</label><br>
+      <input type="checkbox" id="item56" name="item56" value="pesto">
+      <label for="item56">pesto</label><br>
+      <input type="checkbox" id="item57" name="item57" value="alfredo sauce">
+      <label for="item57">alfredo sauce</label><br>
+      <input type="checkbox" id="item58" name="item58" value="instant coffee">
+      <label for="item58">instant coffee</label><br>
+      <input type="checkbox" id="item59" name="item59" value="feta">
+      <label for="item59">feta</label><br>
+      <input type="checkbox" id="item60" name="item60" value="cheddar">
+      <label for="item60">cheddar</label><br>
+      <input type="checkbox" id="item61" name="item61" value="parmesan">
+      <label for="item61">parmesan</label><br>
+      <input type="checkbox" id="item62" name="item62" value="cream cheese">
+      <label for="item62">cream cheese</label><br>
+      <input type="checkbox" id="item63" name="item63" value="mozzarella">
+      <label for="item63">mozzarella</label><br>
+      <input type="checkbox" id="item64" name="item64" value="greek yogurt">
+      <label for="item64">greek yogurt</label><br>
+      <input type="checkbox" id="item65" name="item65" value="cottage cheese">
+      <label for="item65">cottage cheese</label><br>
+      <input type="checkbox" id="item66" name="item66" value="whipping cream">
+      <label for="item66">whipping cream</label><br>
+      <input type="checkbox" id="item67" name="item67" value="butter">
+      <label for="item67">butter</label><br>
+      <input type="checkbox" id="item68" name="item68" value="sour cream">
+      <label for="item68">sour cream</label><br>
+      <input type="checkbox" id="item69" name="item69" value="ground beef">
+      <label for="item69">ground beef</label><br>
+      <input type="checkbox" id="item70" name="item70" value="eggs">
+      <label for="item70">eggs</label><br>
+      <input type="checkbox" id="item71" name="item71" value="chicken">
+      <label for="item71">chicken</label><br>
+      <input type="checkbox" id="item72" name="item72" value="pepperoni">
+      <label for="item72">pepperoni</label><br>
+      <input type="checkbox" id="item73" name="item73" value="bacon">
+      <label for="item73">bacon</label><br>
+      <input type="checkbox" id="item74" name="item74" value="salami">
+      <label for="item74">salami</label><br>
+      <input type="checkbox" id="item75" name="item75" value="fish">
+      <label for="item75">fish</label><br>
+      <input type="checkbox" id="item76" name="item76" value="shrimp">
+      <label for="item76">shrimp</label><br>
+      <input type="checkbox" id="item77" name="item77" value="green beans">
+      <label for="item77">green beans</label><br>
+      <input type="checkbox" id="item78" name="item78" value="tomato">
+      <label for="item78">tomato</label><br>
+      <input type="checkbox" id="item79" name="item79" value="pickles">
+      <label for="item79">pickles</label><br>
+      <input type="checkbox" id="item80" name="item80" value="cucumber">
+      <label for="item80">cucumber</label><br>
+      <input type="checkbox" id="item81" name="item81" value="zucchini">
+      <label for="item81">zucchini</label><br>
+      <input type="checkbox" id="item82" name="item82" value="cauliflower">
+      <label for="item82">cauliflower</label><br>
+      <input type="checkbox" id="item83" name="item83" value="spinach">
+      <label for="item83">spinach</label><br>
+      <input type="checkbox" id="item84" name="item84" value="mushroom">
+      <label for="item84">mushroom</label><br>
+      <input type="checkbox" id="item85" name="item85" value="lettuce">
+      <label for="item85">lettuce</label><br>
+      <input type="checkbox" id="item86" name="item86" value="lemon">
+      <label for="item86">lemon</label><br>
+      <input type="checkbox" id="item87" name="item87" value="brussel sprouts">
+      <label for="item87">brussel sprouts</label><br>
+      <input type="checkbox" id="item88" name="item88" value="carrots">
+      <label for="item88">carrots</label><br>
+      <input type="checkbox" id="item89" name="item89" value="ginger">
+      <label for="item89">ginger</label><br>
+      <input type="checkbox" id="item90" name="item90" value="bell peppers">
+      <label for="item90">bell peppers</label><br>
+      <input type="checkbox" id="item91" name="item91" value="cilantro">
+      <label for="item91">cilantro</label><br>
+      <input type="checkbox" id="item92" name="item92" value="banana">
+      <label for="item92">banana</label><br>
+      <input type="checkbox" id="item93" name="item93" value="orange">
+      <label for="item93">orange</label><br>
+      <input type="checkbox" id="item94" name="item94" value="blueberries">
+      <label for="item94">blueberries</label><br>
+      <input type="checkbox" id="item95" name="item95" value="strawberries">
+      <label for="item95">strawberries</label><br>
+      <input type="checkbox" id="item96" name="item96" value="raspberries">
+      <label for="item86">raspberries</label><br>
+      <input type="checkbox" id="item97" name="item97" value="cherries">
+      <label for="item97">cherries</label><br>
+      <input type="checkbox" id="item98" name="item98" value="blackberries">
+      <label for="item98">blackberries</label><br>
+      <input type="checkbox" id="item99" name="item99" value="watermelon">
+      <label for="item99">watermelon</label><br>
+      <input type="checkbox" id="item100" name="item100" value="milk">
+      <label for="item100">milk</label><br>
+      </label>
+  <hr>
   <input type="submit" value="Submit">
 </form>
-
 </body>
 </html>
