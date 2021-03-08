@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import contactPage from '../views/contactPage.vue'
 import infoPage from '../views/infoPage.vue'
 import loginPage from '../views/loginPage.vue'
+import signupPage from '../views/signupPage.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/loginPage',
     name: 'Login',
     component: loginPage
+  },
+  {
+    path: '/signupPage',
+    name: 'signup',
+    component: signupPage
   }
 ]
 
