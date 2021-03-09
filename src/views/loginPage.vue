@@ -74,7 +74,7 @@ export default {
       console.log(email.value)
 
       console.log("Password:")
-      console.log(email.value)
+      console.log(password.value)
 
       //window.location.href = './Home.vue'
     }

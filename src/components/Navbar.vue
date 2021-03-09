@@ -5,7 +5,7 @@
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
                 <!-- This is what you see on the top left corner of navbar -->
             <!-- <h4 class="" >Hidden Cupboard</h4>  -->
-
+            <!-- Upper right hand corner, acts as a home button and title page -->
             <router-link to="/" class="main-text">Hidden Cupboard</router-link> 
 
                 <ul class="nav">
@@ -23,14 +23,19 @@
                     </li>
                     
                 </ul>
-                  <form class="form-inline">
-                    <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn menu-item my-1" type="submit">Search</button>
-                </form>  
+                  <searchBar/>
             </div>
     </nav>
 </template>
 
+<script>
+import searchBar from './searchBar.vue'
+export default {
+  components: { 
+    searchBar 
+  },
+}
+</script>
 
 <style>
 nav {
@@ -62,10 +67,6 @@ h4{
 }
 .navbar-main{
   background-color: #171f2526;
-}
-
-.search-btn{
-  border:1px solid rgba(39, 39, 39, 0.363)
 }
 
 .main-text{
