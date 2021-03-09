@@ -1,24 +1,33 @@
 <template>
-  <div class="login">
+  <div class="login container centered-content">
     <title>Login page</title>
- 
-    <div class="container" style="max-width:30%; padding-top: 125px;">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <hr>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
-      <br>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-      <br>
-        <div class="form-group">
-						<button id="submitButton" class="btn btn-primary btn-lg login-btn" v-on:click="log()" disabled>Login in</button>
-				</div>
 
+    <!-- d-flex justify-content-center 
+      - align item vertically -->
+    
+    <div class="d-flex flex-column align-self-md-center justify-content-center field-container">
+     
+      <div class="col-md-5 rounded px-5 py-4 Larger shadow bg-white text-center field-element centered-content">
+
+
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <hr>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required autofocus>
+        <br>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <br>
+          <div class="form-group">
+              <button id="submitButton" class="btn btn-primary btn-lg login-btn" v-on:click="log()" disabled>Login in</button>
+          </div>
+      <router-link to="/signupPage" class="btn btn-outline-primary">Don't have an account yet?</router-link>
+      </div>
+
+     
     </div>
 
 
-    <router-link to="/signupPage" class="btn btn-outline-primary">Don't have an account yet?</router-link>
   </div>
 </template>
 
@@ -76,3 +85,15 @@ export default {
     
   }
 </script>
+
+<style scoped>
+
+.field-container {
+  padding-top: 5%;
+}
+
+.centered-content{
+  width: 50%;
+  margin: 0 auto;
+}
+</style>

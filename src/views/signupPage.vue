@@ -1,37 +1,52 @@
 <template>
-    <div class="signup">
+    <div class="signup container centered-content">
         <title>Sing up page</title>
 
-        <div class="container" style="max-width:30%; padding-top: 125px;">
-        <h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
-            <hr>
 
 
 
-        <div class="container">
+    <div class="d-flex flex-column align-self-md-center justify-content-center field-container">
+      <div class="col-md-5 rounded px-5 py-4 Larger shadow bg-white text-center field-element centered-content">
+            <h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
+                <hr>
             <div class="form-group">
                 <input id="firstName" type="text" class="form-control" name="firstName" placeholder="First Name"
                     required="required">
             </div>
+
+
             <div class="form-group">
                 <input id="lastName" type="text" class="form-control" name="lastName" placeholder="Last Name"
                     required="required">
             </div>
+
+
             <div class="form-group">
                 <input id="pass" type="password" class="form-control" name="password" placeholder="Password"
                     required="required">
             </div>
+
+
             <div class="form-group">
                 <input id="confirmPass" type="password" class="form-control" name="confirm password"
                     placeholder="Confirm Password" required="required">
             </div>
+            
             <div class="form-group">
-                <button id="submitButton" class="btn btn-outline-primary btn-block login-btn" v-on:click="log()" disabled >Sign Up</button>
-            </div>
+                <button id="submitButton" class="btn btn-outline-primary btn-block login-btn" v-on:click="log()" disabled >Sign Up
+                </button>
+            <div/>
         </div>
+    
+    
+        
+    </div>
 
-        <div class="container">
-            <div id="fields-check" style="display:block">
+
+    
+
+        <div class="d-flex flex-column-reverse justify-content-center field-container ">
+      <div class="col-md-5 rounded px-5 py-4 shadow bg-white text-center field-element centered-content">
                 
                 <!-- make sure first and last name are filled -->
                 <h6>Full first and last name</h6>
@@ -213,5 +228,14 @@ export default {
   position: relative;
   left: -35px;
   content: '\00D7';
+}
+
+.field-container {
+  padding-top: 5%;
+}
+
+.centered-content{
+   	width: 50%;
+    margin: 0 auto;
 }
 </style>
