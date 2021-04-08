@@ -5,6 +5,8 @@ import contactPage from '../views/contactPage.vue'
 import infoPage from '../views/infoPage.vue'
 import loginPage from '../views/loginPage.vue'
 import signupPage from '../views/signupPage.vue'
+import cupboardPage from '../views/CupboardPage.vue'
+import recipePage from '../views/RecipePage.vue'
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,16 @@ const routes = [
     path: '/signupPage',
     name: 'signup',
     component: signupPage
+  },
+  {
+    path: '/cupboardPage',
+    name: 'cupboardPage',
+    component: cupboardPage
+  },
+  {
+    path: '/recipePage',
+    name: 'recipePage',
+    component: recipePage
   }
 ]
 

@@ -37,6 +37,6 @@ export default {
 }
 body {
   font-family: 'montserrat', sans-serif;
-  background-color: #F8F8F8;
+  background-color: #ffffff;
 }
 </style>
